@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+#main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+#image-container {
+  background: url('images/umbc1.jpg') center/cover no-repeat;
+  height: 400px;
+  width: 100vw; /* Use viewport width to fill the entire width */
+  margin-left: calc((100% - 100vw) / 2);
+  position: relative;
+  overflow: hidden;
+}
+
+
+#text-content {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 0; /* Adjust margin-top to 0 */
+}
+
+.section {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
